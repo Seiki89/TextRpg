@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#E6FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/txtInputName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/NewHero"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="377dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtInputName" />
+
+            <TextView
+                android:id="@+id/txtChangeSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="206dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtChangeSex">
+
+                <RadioButton
+                    android:id="@+id/butMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Male"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/butFamale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/Female"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imgManMage"
+                android:layout_width="100dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioSex"
+                app:srcCompat="@drawable/prof_man_mage" />
+
+            <ImageView
+                android:id="@+id/imgManThef"
+                android:layout_width="100dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="50dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/imgManMage"
+                app:layout_constraintStart_toEndOf="@+id/imgManWarrior"
+                app:layout_constraintTop_toBottomOf="@+id/radioSex"
+                app:srcCompat="@drawable/prof_man_thef" />
+
+            <ImageView
+                android:id="@+id/imgManWarrior"
+                android:layout_width="100dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioSex"
+                app:srcCompat="@drawable/prof_man_warrior" />
+
+            <ImageView
+                android:id="@+id/imgWomanWarrior"
+                android:layout_width="100dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2"
+                app:srcCompat="@drawable/prof_woman_warrior" />
+
+            <ImageView
+                android:id="@+id/imgWomanThef"
+                android:layout_width="100dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="50dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/imgManMage"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toEndOf="@+id/imgManWarrior"
+                app:layout_constraintTop_toBottomOf="@+id/divider2"
+                app:srcCompat="@drawable/prof_woman_thef" />
+
+            <ImageView
+                android:id="@+id/imgWomanMage"
+                android:layout_width="100dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2"
+                app:srcCompat="@drawable/prof_woman_mage" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="377dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioSex" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="377dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgManThef" />
+
+            <RadioGroup
+                android:id="@+id/radioProf"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgManThef">
+
+                <RadioButton
+                    android:id="@+id/radioWarrior"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/Warrior"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioThef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/Thief"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioMage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:text="@string/Mage"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="377dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioProf" />
+
+            <Button
+                android:id="@+id/newStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#A6772206"
+                android:text="@string/New_game"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+            <TextView
+                android:id="@+id/txtOldHero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Персонаж еще не создан"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/continium"
+                app:layout_constraintEnd_toStartOf="@+id/divider6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+            <TextView
+                android:id="@+id/txtOldLvl"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/continium"
+                app:layout_constraintEnd_toStartOf="@+id/divider6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtOldHero"
+                app:layout_constraintVertical_bias="0.19999999" />
+
+            <Button
+                android:id="@+id/continium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="#A6772206"
+                android:text="@string/Сontinue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/divider6"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="377dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioProf" />
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.65"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+            <ImageView
+                android:id="@+id/imgProfEmpty"
+                android:layout_width="100dp"
+                android:layout_height="190dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/divider6"
+                app:layout_constraintTop_toBottomOf="@+id/divider5"
+                app:srcCompat="@drawable/prof_empty" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

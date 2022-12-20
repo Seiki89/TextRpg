@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">TextGame</string>
+
+    <string name="Warrior">Warrior</string>
+    <string name="Thief">Thief</string>
+    <string name="Mage">Mage</string>
+
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+
+    <string name="New_game">New Game</string>
+    <string name="Сontinue">Сontinue</string>
+
+    <string name="Aggressive">Aggressive</string>
+    <string name="Thoughtful">Thoughtful</string>
+    <string name="Greedy">Greedy</string>
+
+    <string name="Mood">Mood:</string>
+    <string name="health">Health:</string>
+    <string name="MagicPower">Magic Power:</string>
+    <string name="Gold">Gold:</string>
+    <string name="Experience">Experience:</string>
+    <string name="Level">Level:</string>
+    <string name="EmptyHero">The character has not been created yet</string>
+    <string name="NotFields">Not all fields are selected and filled in</string>
+    <string name="NewHero">What\'s your name, hero?</string>
+    <string name="gender">Choose a gender</string>
+    <string name="AttackPower">Attack Power</string>
+    <string name="MagicAttackPower">Magic Attack Power</string>
+    <string name="CriticalAttackChance">Critical Attack Chance</string>
+    <string name="ChanceDodge">Chance to dodge</string>
+    <string name="BlockChance">Block Chance</string>
+    <string name="PhysicalProtection">Physical protection</string>
+    <string name="MagicalProtection">Magical protection</string>
+    <string name="Head">Head</string>
+    <string name="Chest">Chest</string>
+    <string name="Groin">Groin</string>
+    <string name="Legs">Legs</string>
+    <string name="Attack">Attack</string>
+    <string name="Protection">Protection</string>
+    <string name="Name">Name</string>
+
+    <string name="loc_01_desc">"You are near the observation tower"</string>
+    <string name="loc_02_desc">You walked across a fairly strong bridge to the island.
+        the island is really small, all its borders are visible.
+        on the far side of the island there is another bridge leading further across the river
+    </string>
+    <string name="title_01_1">My head hurts… we should try to open our eyes… hmm… or it didn\'t work out… or is it that dark in here…</string>
+    <string name="title_01_2">There are damp matches in the pocket, you can try to light them</string>
+    <string name="title_03">At last.. the match lit up, the light hurt my eyes… we need to wait a little, get used to it..</string>
+    <string name="title_04">Your eyes got used to the light, and now you see a door at the far wall</string>
+    <string name="title_btn_blind">Trying to walk in the dark</string>
+    <string name="title_find">Trying to find something</string>
+    <string name="title_fire">Trying to light a match</string>
+    <string name="title_Wait">Wait a bit..</string>
+    <string name="title_exit">Exit through the door</string>
+    <string name="title_head_bash">\n You\'re hurting your head against something, losing lives, but you can try again..</string>
+    <string name="title_fire_broke">\n The match is broken, but you can try again..</string>
+    <string name="GoToBridge">Go to the wooden bridge</string>
+    <string name="BackWatchtower">Back to the watchtower</string>
+
+
+
+</resources>

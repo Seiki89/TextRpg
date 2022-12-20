@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TextGame</string>
+
+    <string name="Warrior">Воин</string>
+    <string name="Thief">Вор</string>
+    <string name="Mage">Маг</string>
+
+    <string name="Male">Мужчина</string>
+    <string name="Female">Женщина</string>
+
+    <string name="New_game">Новая игра</string>
+    <string name="Сontinue">Продолжить</string>
+
+    <string name="Aggressive">Агрессивный</string>
+    <string name="Thoughtful">Задумчивый</string>
+    <string name="Greedy">Жадный</string>
+
+    <string name="Mood">Настроение:</string>
+    <string name="health">Здоровье:</string>
+    <string name="MagicPower">Манна:</string>
+    <string name="Gold">Золото:</string>
+    <string name="Experience">Опыт:</string>
+    <string name="Level">Уровень:</string>
+    <string name="EmptyHero">Персонаж еще не создан</string>
+    <string name="NotFields">Не все поля выбраны и заполнены</string>
+    <string name="NewHero">Как тебя зовут , герой?</string>
+    <string name="gender">Выберите пол</string>
+    <string name="AttackPower">Сила атаки</string>
+    <string name="MagicAttackPower">Сила магической атаки</string>
+    <string name="CriticalAttackChance">Шанс критической атаки</string>
+    <string name="ChanceDodge">Шанс уворота</string>
+    <string name="BlockChance">Шанс Блока</string>
+    <string name="PhysicalProtection">Физическая защита</string>
+    <string name="MagicalProtection">Магическая защита</string>
+    <string name="Head">Голова</string>
+    <string name="Chest">Грудь</string>
+    <string name="Groin">Пах</string>
+    <string name="Legs">Ноги</string>
+    <string name="Attack">Атака</string>
+    <string name="Protection">Защита</string>
+    <string name="Name">Имя</string>
+
+
+    <string name="loc_01_desc">
+        Ты находишься возле смотровой башни.
+    </string>
+    <string name="loc_02_desc">Ты прошел по довольно крепкому мостику, на остров.
+        островок действительно небольшой,  видны все его границы.
+        на дальней стороне острова стоит еще один мостик, ведущий дальше через реку
+    </string>
+    <string name="title_01_1">"Голова болит… надо попытаться открыть глаза… хм… или не получилось… или здесь настолько темно… "</string>
+    <string name="title_01_2">В кармане лежат отсыревшие спички, можно попробовать зажечь</string>
+    <string name="title_03">Наконец то.. спичка зажглась, от света глазам стало больно… надо немного подождать, привыкнуть..</string>
+    <string name="title_04">"Глаза привыкли к свету, и теперь ты видишь дверь  у дальней стены "</string>
+    <string name="title_btn_blind">Пытаться идти вслепую</string>
+    <string name="title_find">Пытаться что нибудь найти</string>
+    <string name="title_fire">Пытаться зажечь спичку</string>
+    <string name="title_Wait">Немного подождать..</string>
+    <string name="title_exit">Выйти через дверь</string>
+    <string name="title_head_bash">\n Ты больно бьешься обо чтото головой,теряя жизни, но можно попробовать еще..</string>
+    <string name="title_fire_broke">\n Спичка обломилась, но можно попробовать еще..</string>
+    <string name="GoToBridge">Пройти к деревянному мостику</string>
+    <string name="BackWatchtower">Назад, к сторожевой башне</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/quest"
+        android:icon="@drawable/ic_play_bottom"
+        android:orderInCategory="100"
+        android:title="Игра" />
+    <item
+        android:id="@+id/hero"
+        android:icon="@drawable/ic_hero_bottom"
+        android:orderInCategory="200"
+        android:title="Герой" />
+    <item
+        android:id="@+id/bag"
+        android:icon="@drawable/ic_bag_bottom"
+        android:orderInCategory="300"
+        android:title="Рюкзак" />
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/ic_map_bottom"
+        android:orderInCategory="400"
+        android:title="Карта" />
+</menu>

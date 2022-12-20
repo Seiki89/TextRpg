@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FightFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgAvaHero"
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/prof_empty"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgAvaMonster"
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/mob_goblin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtInfAatack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Attack"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/divider11"
+            app:layout_constraintEnd_toStartOf="@+id/divider10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgAvaHero" />
+
+        <TextView
+            android:id="@+id/txtInfDefence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="1dp"
+            android:text="@string/Protection"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/divider13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider10"
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+        <RadioGroup
+            android:id="@+id/radioATK"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/divider10"
+            app:layout_constraintEnd_toStartOf="@+id/divider10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfAatack">
+
+            <RadioButton
+                android:id="@+id/radHeadAtk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Head"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radChestAtk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Chest"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radGroinAtk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Groin"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radLegAtk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Legs"
+                android:textColor="@color/black" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioDef"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/divider10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider10"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfDefence">
+
+            <RadioButton
+                android:id="@+id/radDefHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Head"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radDefChest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Chest"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radDefGroin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Groin"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radDefLeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Legs"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider14"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgAvaMonster"
+            app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+        <View
+            android:id="@+id/divider15"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/divider10"
+            app:layout_constraintStart_toEndOf="@+id/imgAvaHero"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider16"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toStartOf="@+id/divider14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+        <View
+            android:id="@+id/divider17"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider15"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgAvaHero" />
+
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toStartOf="@+id/divider10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider10" />
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/divider19"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider10"
+            app:layout_constraintTop_toTopOf="@+id/divider10" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/imgAvaMonster"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtNameHero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/divider17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider15"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtNameMonster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider16"
+            app:layout_constraintEnd_toStartOf="@+id/divider14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+        <View
+            android:id="@+id/divider18"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="32dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/divider10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider15" />
+
+        <ImageView
+            android:id="@+id/btnHpMax"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/loot_eat_health_big"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintStart_toEndOf="@+id/divider15"
+            app:layout_constraintTop_toBottomOf="@+id/divider18"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtBigHpPt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintStart_toEndOf="@+id/btnHpMax"
+            app:layout_constraintTop_toBottomOf="@+id/divider18"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/btnHpMin"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/loot_eat_health_min"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintStart_toEndOf="@+id/txtBigHpPt"
+            app:layout_constraintTop_toBottomOf="@+id/divider18"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtMinHpPt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintStart_toEndOf="@+id/btnHpMin"
+            app:layout_constraintTop_toBottomOf="@+id/divider18"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/btnSpMax"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/loot_eat_manna_big"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintStart_toEndOf="@+id/txtMinHpPt"
+            app:layout_constraintTop_toBottomOf="@+id/divider18"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtBigSpPt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintStart_toEndOf="@+id/btnSpMax"
+            app:layout_constraintTop_toBottomOf="@+id/divider18"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/btnSpMin"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/loot_eat_manna_min"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintStart_toEndOf="@+id/txtBigSpPt"
+            app:layout_constraintTop_toBottomOf="@+id/divider18"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtMinSpPt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintStart_toEndOf="@+id/btnSpMin"
+            app:layout_constraintTop_toBottomOf="@+id/divider18"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/divider19"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="32dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/divider28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDiscriptionMonster"
+            android:layout_width="281dp"
+            android:layout_height="119dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/divider14"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfHpMonster" />
+
+        <TextView
+            android:id="@+id/txtHpMonster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="hp monster"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/divider14"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/txtInfHpMonster"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameMonster" />
+
+        <TextView
+            android:id="@+id/txtInfHpMonster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/health"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameMonster" />
+
+        <TextView
+            android:id="@+id/logBattle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="bottom"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/divider18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/divider15"
+            app:layout_constraintTop_toBottomOf="@+id/divider17"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btnAttack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#A6772206"
+            android:text="@string/Attack"
+            app:layout_constraintBottom_toTopOf="@+id/txtNameMonster"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/divider28"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/btnAttack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/mageFire"
+            android:layout_width="35dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/mage_fire"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider19"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/mageWatter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mage_watter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider28"
+            app:layout_constraintEnd_toStartOf="@+id/mageEarth"
+            app:layout_constraintStart_toEndOf="@+id/mageFire"
+            app:layout_constraintTop_toBottomOf="@+id/divider19"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/mageEarth"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mage_earh"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider19"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/mageWind"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mage_wind"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider28"
+            app:layout_constraintEnd_toStartOf="@+id/mageArkane"
+            app:layout_constraintStart_toEndOf="@+id/mageEarth"
+            app:layout_constraintTop_toBottomOf="@+id/divider19"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/mageArkane"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/mage_arkane"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/divider28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider19"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
